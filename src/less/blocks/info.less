@@ -1,0 +1,37 @@
+.info{
+    background-color: @color_gray-f5;
+    padding: 50px 0;
+    &-block{
+        .row-flex();
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .page__text{
+            padding: 15px 10px;
+            .sm(text-align,center);
+        }
+        .page__btn{
+            .size(3);
+            .size-sm(12);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &.animated{
+        .page__title-h2,
+        .page__text,
+        .page__btn{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .page__text{
+           .delay(.2s);
+        }
+        .page__btn{
+           .delay(.3s);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+mixin item(classIcon,title)
+    .feature-block-item
+        .feature-block-item__icon
+            div(class=classIcon)
+        .feature-block-item__text
+            h3.page__title-h3=title
+            p.page__text Aenean massa cum sociis natoque lit esses dis parturient montes ridiculus ultricies.
+section.feature
+    .wrapper
+        .page__title-h2 our feature of 
+            span.page_color-green education
+        .feature-block
+            +item('feature-block-item__icon_somebody', 'Expertment Instructors')
+            +item('feature-block-item__icon_eye', 'Offline Viewing')
+            +item('feature-block-item__icon_compas', 'Controlling Individuals')
+            +item('feature-block-item__icon_clock', 'Support 24/7')

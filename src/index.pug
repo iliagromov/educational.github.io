@@ -1,0 +1,22 @@
+extends templates/template
+
+block title
+	title Educational
+block append style
+block content
+	main.page
+		include modules/header-module
+		include blocks/banner
+		include blocks/service
+		include blocks/about
+		include blocks/feature
+		include blocks/register
+		include blocks/team
+		include blocks/testimonial
+		include blocks/info
+	include blocks/footer
+	include blocks/modal
+block append script
+	script(src='js/countdown.js')
+	script(src='js/store-scroll.js')
+	script(src='js/scroll-anchors.js')

@@ -1,0 +1,15 @@
+mixin item(idName,value, name)
+    .register-block-item
+        .register-block-item_circle
+            .register-block-item__value(id=idName)=value
+            .register-block-item__name=name
+
+section.register
+    .wrapper
+        .page__text_undo Get 100s of online courses for free
+        h2.page__title-h2 REGISTER NOW
+        .register-block
+            +item('days',70, 'Days')
+            +item('hours',10, 'Hours')
+            +item('minutes',45, 'Minutes')
+            +item('seconds',48, 'Seconds')

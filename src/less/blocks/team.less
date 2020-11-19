@@ -1,0 +1,43 @@
+.team{
+    padding: 70px 0;
+    background-color: @color_gray-f5;
+    opacity: 0;
+    &-block{
+        .row-flex();
+        &-item{
+            .col();
+            .size(3);
+            .size-sm(6);
+            .size-xs(12);
+            .xs-block({
+                margin-bottom: 20px;
+            });
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .page__img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .page__title-h2{
+        padding: 0 0 45px;
+    }
+    &.animated{
+        opacity: 1;
+        .page__title-h2{
+            .animated({
+                .fadeInDown();
+            });
+        }
+        .team-block-item{
+            .animated({
+                .zoomIn();
+                .delay(.2s);
+            });
+        }
+    }
+}

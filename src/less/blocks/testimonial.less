@@ -1,0 +1,47 @@
+.testimonial{
+    padding: 50px 0;
+    &-block{
+        
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        text-align: center;
+        .page__img{
+            border-radius: 3px;
+        
+            height: 120px;
+            width: 130px;
+            margin-bottom: 15px;
+        }
+        .page__text{
+            color:@color_gray-3;
+        }
+        .page__text_md-8{
+            .size(8);
+            .size-ssm(12);
+            margin: 0 auto;
+        } 
+        .page__text_padding-top{
+            padding-top:15px;
+        }
+       
+    }
+    .page__title-h2{
+        padding-bottom:50px;
+    }
+    &.animated{
+        .page__title-h2,
+        .page__img,
+        .page__text{
+            .animated({
+                .fadeInDown();
+            });
+        }
+        .page__img{
+           .delay(.2s);
+        }
+        .page__text{
+           .delay(.3s);
+        }
+    }
+}

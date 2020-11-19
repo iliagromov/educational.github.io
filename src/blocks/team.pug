@@ -1,0 +1,14 @@
+mixin item(img, title, subtitle)
+    .team-block-item
+        img.page__img(src=img, alt="")
+        h3.page__title-h3=title
+        p.page__text=subtitle
+section.team
+    .wrapper
+        h2.page__title-h2 our team of  
+            span.page_color-green education
+        .team-block
+            +item('assets/img/img-agent-1.jpg', 'Piff Jenkins', 'Web design')
+            +item('assets/img/img-agent-2.jpg', 'Lance Bogrol', 'mobile app')
+            +item('assets/img/img-agent-3.jpg', 'Florence Scott', 'HTML & CS5')
+            +item('assets/img/img-agent-4.jpg', 'Fletch Skinner', 'Javascript')
